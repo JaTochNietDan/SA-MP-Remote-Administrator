@@ -1,0 +1,1816 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F82E0B32-D998-4FC6-9DE5-05215D9CC284}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RemoteAdmins.My.MyApplication</StartupObject>
+    <RootNamespace>RemoteAdmins</RootNamespace>
+    <AssemblyName>RemoteAdmins</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>D:\Dropbox\Public\releases\RemoteAdmins\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://dl.dropbox.com/u/12901320/releases/RemoteAdmins/</InstallUrl>
+    <SupportUrl>http://files.jatochnietdan.com/%3fview=RemoteAdmin</SupportUrl>
+    <TargetCulture>en-IE</TargetCulture>
+    <ProductName>SA-MP Remote Administrator</ProductName>
+    <PublisherName>JaTochNietDan</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.2.3.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RemoteAdmins.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RemoteAdmins.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7B2BEC23300638C942219AE21F71EED0692C5D9D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ReleaseSignature.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Internet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1338401495_control-panel-px-png.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Debugger.Designer.vb">
+      <DependentUpon>Debugger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Debugger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnect.Designer.vb">
+      <DependentUpon>frmConnect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomBan.Designer.vb">
+      <DependentUpon>frmCustomBan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomBan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmPlayerInfo.Designer.vb">
+      <DependentUpon>frmPlayerInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlayerInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlayerMap.Designer.vb">
+      <DependentUpon>frmPlayerMap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlayerMap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Debugger.resx">
+      <DependentUpon>Debugger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnect.resx">
+      <DependentUpon>frmConnect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomBan.resx">
+      <DependentUpon>frmCustomBan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlayerInfo.resx">
+      <DependentUpon>frmPlayerInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlayerMap.resx">
+      <DependentUpon>frmPlayerMap.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_400.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_401.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_402.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_403.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_404.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_405.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_406.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_407.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_408.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_409.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_410.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_411.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_412.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_413.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_414.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_415.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_416.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_417.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_418.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_419.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_420.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_421.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_422.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_423.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_424.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_425.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_426.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_427.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_428.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_429.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_430.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_431.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_432.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_433.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_434.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_435.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_436.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_437.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_438.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_439.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_440.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_441.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_442.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_443.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_444.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_445.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_446.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_447.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_448.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_449.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_450.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_451.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_452.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_453.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_454.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_455.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_456.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_457.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_458.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_459.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_460.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_461.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_462.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_463.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_464.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_465.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_466.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_467.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_468.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_469.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_470.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_471.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_472.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_473.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_474.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_475.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_476.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_477.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_478.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_479.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_480.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_481.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_482.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_483.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_484.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_485.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_486.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_487.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_488.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_489.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_490.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_491.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_492.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_493.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_494.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_495.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_496.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_497.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_498.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_499.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_501.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_502.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_503.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_504.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_505.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_506.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_507.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_508.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_509.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_510.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_511.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_512.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_513.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_514.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_515.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_516.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_517.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_518.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_519.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_520.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_521.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_522.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_523.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_524.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_525.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_526.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_527.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_528.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_529.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_530.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_531.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_532.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_533.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_534.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_535.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_536.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_537.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_538.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_539.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_540.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_541.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_542.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_543.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_544.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_545.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_546.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_547.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_548.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_549.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_550.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_551.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_552.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_553.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_554.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_555.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_556.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_557.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_558.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_559.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_560.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_561.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_562.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_563.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_564.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_565.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_566.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_567.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_568.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_569.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_570.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_571.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_572.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_573.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_574.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_575.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_576.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_577.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_578.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_579.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_580.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_581.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_582.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_583.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_584.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_585.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_586.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_587.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_588.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_589.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_590.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_591.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_592.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_593.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_594.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_595.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_596.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_597.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_598.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_599.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_601.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_602.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_603.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_604.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_605.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_606.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_607.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_608.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_609.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_610.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehicle_611.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_69.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_73.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_77.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_78.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_79.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_82.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_84.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_85.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_86.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_89.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_92.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_93.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_94.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_95.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_97.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_98.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_99.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_102.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_103.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_104.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_105.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_106.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_107.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_108.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_109.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_113.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_114.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_115.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_116.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_117.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_118.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_119.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_124.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_125.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_126.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_127.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_129.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_132.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_133.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_134.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_136.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_137.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_138.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_139.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_142.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_143.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_145.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_146.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_147.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_148.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_149.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_151.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_152.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_153.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_154.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_155.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_156.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_157.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_158.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_159.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_163.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_164.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_165.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_166.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_167.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_168.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_169.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_172.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_173.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_174.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_175.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_176.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_177.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_178.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_179.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_181.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_182.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_183.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_184.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_185.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_186.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_187.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_188.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_189.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_191.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_192.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_193.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_194.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_195.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_196.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_197.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_198.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_199.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_202.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_203.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_204.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_205.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_206.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_207.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_208.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_209.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_213.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_214.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_215.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_216.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_217.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_218.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_219.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_223.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_224.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_225.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_226.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_227.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_228.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_229.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_232.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_233.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_234.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_235.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_236.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_237.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_238.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_239.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_242.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_243.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_244.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_245.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_246.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_247.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_248.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_249.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_251.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_252.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_253.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_254.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_255.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_257.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_258.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_259.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_261.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_262.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_263.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_264.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_265.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_266.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_267.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_268.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_269.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_271.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_272.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_273.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_274.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_275.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_276.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_277.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_278.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_279.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_282.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_283.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_284.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_285.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_286.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_287.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_288.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_289.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_294.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_295.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_296.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_297.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_298.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin_299.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_vehicle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtasa_aerial_map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtasa_aerial_map_small.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bunned.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1338401495_control-panel-px-png.ico" />
+    <None Include="Resources\mapMarker.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
