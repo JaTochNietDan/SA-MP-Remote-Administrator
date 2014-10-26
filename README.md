@@ -9,7 +9,7 @@
 - Fully interactive in-game chat (with player colours)
 - List of in-game players (with player colours)
 - Right-click on player list to do an administrator action on them
-- Live in-game statistics with a map view ([color=red]awesome tracking mode included[/color] [b]and[/b] pictures of current vehicle/skin)
+- Live in-game statistics with a map view (awesome tracking mode included and pictures of current vehicle/skin)
 - In-game statistics can be edited immediately by changing the value and pressing enter
 - Total ban system, includes timed bans, permanent bans and a simplified ban management interface
 - Administration system, you can add/edit administrators who will be able to login with this tool
@@ -31,7 +31,7 @@
 ## Frequently Asked Questions
 
 ### Various player list problems, missing names, missing IDs etc
-Make sure that the [url=https://dl.dropbox.com/u/12901320/releases/RemoteAdmins/remoteadmin.amx]filterscript[/url] is the first one being loaded to avoid conflicts with other scripts.
+Make sure that the [filterscript](https://dl.dropbox.com/u/12901320/releases/RemoteAdmins/remoteadmin.amx) is the first one being loaded to avoid conflicts with other scripts.
 
 ### Do I have to use a different port than my server for Remote Administrator?
 Yes, you need to specify a different port for the Remote Administrator service to use in the filterscript that you downloaded. The default port is 9890 and will usually work fine with that.
@@ -40,7 +40,7 @@ Yes, you need to specify a different port for the Remote Administrator service t
 This means that you are either not connecting to the correct port for the Remote Administrator service that was set in the filterscript (by default 9890), or your server is refusing connections. Most likely the former.
 
 ### socket_listen(): Socket has failed to bind
-Download the [url=https://dl.dropbox.com/u/12901320/releases/RemoteAdmins/remoteadmin.pwn]filterscript source[/url], open it, find this line:
+Download the [filterscript source](https://dl.dropbox.com/u/12901320/releases/RemoteAdmins/remoteadmin.pwn), open it, find this line:
 
 ```
 //#define SOCKET_BIND "127.0.0.1"
@@ -49,7 +49,7 @@ Download the [url=https://dl.dropbox.com/u/12901320/releases/RemoteAdmins/remote
 Remove the // from the start of the line, compile and load the new filterscript.
 
 ### Can I configure my own administrator levels for certain actions?
-Yes, they are completely configurable, just download the [url=https://dl.dropbox.com/u/12901320/releases/remoteadmin.pwn]filterscript source[/url], open it, edit the level definitions and compile it.
+Yes, they are completely configurable, just download the [filterscript source](https://dl.dropbox.com/u/12901320/releases/remoteadmin.pwn), open it, edit the level definitions and compile it.
 
 **What are the default permissions for each level?**
 
