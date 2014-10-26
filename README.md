@@ -1,5 +1,4 @@
 # Remote Administrator
-======================
 
 ![Pic 1](https://dl.dropbox.com/u/12901320/Pictures/Capture1.PNG) ![Pic 2](https://dl.dropbox.com/u/12901320/Pictures/Capture2.PNG) ![Pic 3](https://dl.dropbox.com/u/12901320/Pictures/Capture3.PNG)
 ![Pic 4](https://dl.dropbox.com/u/12901320/Pictures/Capture%204.png) ![Pic 5](https://dl.dropbox.com/u/12901320/Pictures/Capture%205.png)
